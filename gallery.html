@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Polymers | Premium Plastic Manufacturing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Abhiverdhya Logo Audit.jpg" alt="Prime Polymers" height="60"
+                    class="d-inline-block align-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Find Your Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/maps/place/Abhiverdhya+Industries+Pvt.+Ltd./@12.7399596,77.8259369,16z/data=!3m1!4b1!4m6!3m5!1s0x3bae7151fb0e44a5:0x43347abd4ecbdd43!8m2!3d12.7399596!4d77.8259369!16s%2Fg%2F11wttqx8xl?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D">
+                            <i class="fa-solid fa-location-dot fa-flip-horizontal p-2 mt-1" style="color: #646363;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section animate__animated animate__fadeIn">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Premium Plastic Covers</h1>
+            <p class="lead mb-4">Protecting what matters most with high-quality, durable plastic solutions</p>
+            <a href="#products" class="btn btn-light btn-lg px-4">Explore Products</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center animate__animated animate__fadeIn">Our Products</h2>
+
+            <!-- Category Filters -->
+            <div class="category-filter text-center">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="furniture">Furniture Covers</button>
+                <button class="filter-btn" data-filter="food">Food Covers</button>
+                <button class="filter-btn" data-filter="vehicle">Vehicle Covers</button>
+                <button class="filter-btn" data-filter="industrial">Industrial Covers</button>
+                <button class="filter-btn" data-filter="seasonal">Seasonal Covers</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="furniture">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">Bestseller</span>
+                            <img src="https://m.media-amazon.com/images/I/71yJYH4ZkVL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Sofa Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Premium Sofa Cover</h3>
+                            <p class="product-description">Protect your furniture from dust, spills, and pet hair with
+                                our durable sofa cover.</p>
+                            <ul class="product-features">
+                                <li>Water-resistant material</li>
+                                <li>Elastic edges for secure fit</li>
+                                <li>Machine washable</li>
+                                <li>Available in 5 sizes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="furniture">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2021/12/QO/KK/JA/3033603/plastic-chair-cover-500x500.jpg"
+                                alt="Chair Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Transparent Chair Covers</h3>
+                            <p class="product-description">Clear plastic covers perfect for event chairs or dining
+                                chairs.</p>
+                            <ul class="product-features">
+                                <li>100% transparent PVC</li>
+                                <li>0.2mm thickness</li>
+                                <li>Pack of 50 covers</li>
+                                <li>One-size fits most chairs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="food">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">Eco-friendly</span>
+                            <img src="https://m.media-amazon.com/images/I/71xX+n+JwVL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Food Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Microwave Food Covers</h3>
+                            <p class="product-description">Reusable plastic covers to keep food fresh and prevent
+                                splatters.</p>
+                            <ul class="product-features">
+                                <li>BPA-free plastic</li>
+                                <li>Ventilation holes</li>
+                                <li>Stackable design</li>
+                                <li>Set of 3 sizes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="vehicle">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://m.media-amazon.com/images/I/81V5J+1VJQL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Car Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">All-Weather Car Cover</h3>
+                            <p class="product-description">Heavy-duty protection against sun, rain, snow, and dust.</p>
+                            <ul class="product-features">
+                                <li>UV-resistant material</li>
+                                <li>Elastic hem and tie-down straps</li>
+                                <li>Breathable fabric</li>
+                                <li>Custom fit available</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="industrial">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">Heavy-duty</span>
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2022/1/DF/VA/TA/3033603/plastic-tarpaulin-roll-500x500.jpg"
+                                alt="Tarpaulin" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Industrial Tarpaulin Sheets</h3>
+                            <p class="product-description">Heavy-duty plastic sheets for construction and industrial
+                                use.</p>
+                            <ul class="product-features">
+                                <li>200-500 GSM thickness</li>
+                                <li>Waterproof and tear-resistant</li>
+                                <li>UV stabilized</li>
+                                <li>Custom sizes available</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="seasonal">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://m.media-amazon.com/images/I/71x5x+2rWVL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Pool Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Swimming Pool Cover</h3>
+                            <p class="product-description">Keep your pool clean during off-season with our durable
+                                cover.</p>
+                            <ul class="product-features">
+                                <li>Reinforced edges</li>
+                                <li>Algae prevention</li>
+                                <li>Water bag system included</li>
+                                <li>Custom sizes available</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="furniture">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://m.media-amazon.com/images/I/71Y1k9ZqWBL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Mattress Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Waterproof Mattress Cover</h3>
+                            <p class="product-description">Protect your mattress from spills, stains, and allergens.</p>
+                            <ul class="product-features">
+                                <li>100% waterproof</li>
+                                <li>Hypoallergenic</li>
+                                <li>Noiseless fabric</li>
+                                <li>Fits mattresses up to 18" deep</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="food">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">New</span>
+                            <img src="https://m.media-amazon.com/images/I/71JdZnQKXBL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Food Container" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Stackable Food Containers</h3>
+                            <p class="product-description">Airtight containers with locking lids for food storage.</p>
+                            <ul class="product-features">
+                                <li>BPA-free plastic</li>
+                                <li>Leak-proof design</li>
+                                <li>Microwave and freezer safe</li>
+                                <li>Set of 10 containers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="vehicle">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://m.media-amazon.com/images/I/71Y3QYJlRBL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Motorcycle Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Motorcycle Rain Cover</h3>
+                            <p class="product-description">Compact and lightweight cover for bikes and scooters.</p>
+                            <ul class="product-features">
+                                <li>Waterproof polyester</li>
+                                <li>Elastic hem cord</li>
+                                <li>Carry pouch included</li>
+                                <li>Fits up to 1100cc bikes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="industrial">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">Best Value</span>
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2021/12/UP/YC/JA/3033603/plastic-sheet-500x500.jpg"
+                                alt="Plastic Sheeting" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Clear Plastic Sheeting</h3>
+                            <p class="product-description">Multi-purpose plastic sheets for painting, construction, and
+                                more.</p>
+                            <ul class="product-features">
+                                <li>4 mil thickness</li>
+                                <li>20' x 100' roll</li>
+                                <li>Easy to cut and handle</li>
+                                <li>Great for drop cloths</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="seasonal">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://m.media-amazon.com/images/I/71yJYH4ZkVL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Patio Furniture Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Patio Furniture Cover Set</h3>
+                            <p class="product-description">Protect your outdoor furniture from harsh weather conditions.
+                            </p>
+                            <ul class="product-features">
+                                <li>UV-resistant fabric</li>
+                                <li>Waterproof and breathable</li>
+                                <li>Elastic cord hem</li>
+                                <li>Set of 3 covers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="furniture">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://m.media-amazon.com/images/I/71xX+n+JwVL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Table Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Plastic Tablecloth</h3>
+                            <p class="product-description">Disposable table covers for parties and events.</p>
+                            <ul class="product-features">
+                                <li>100% polyethylene</li>
+                                <li>Wipe-clean surface</li>
+                                <li>Fits 6' and 8' tables</li>
+                                <li>12 assorted colors</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 13 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="food">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">Eco-friendly</span>
+                            <img src="https://m.media-amazon.com/images/I/81V5J+1VJQL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Produce Bags" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Reusable Produce Bags</h3>
+                            <p class="product-description">Mesh bags for fruits and vegetables - reduce plastic waste.
+                            </p>
+                            <ul class="product-features">
+                                <li>Washable and reusable</li>
+                                <li>Breathable mesh</li>
+                                <li>Drawstring closure</li>
+                                <li>Set of 10 bags</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 14 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="vehicle">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2021/12/QO/KK/JA/3033603/plastic-chair-cover-500x500.jpg"
+                                alt="Boat Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Boat Storage Cover</h3>
+                            <p class="product-description">Heavy-duty cover for boats up to 25 feet.</p>
+                            <ul class="product-features">
+                                <li>Marine-grade fabric</li>
+                                <li>Molded vents prevent condensation</li>
+                                <li>Adjustable straps</li>
+                                <li>UV and mildew resistant</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 15 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="industrial">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">Industrial</span>
+                            <img src="https://m.media-amazon.com/images/I/71x5x+2rWVL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Pallet Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Pallet Covers</h3>
+                            <p class="product-description">Protect palletized goods during storage and transport.</p>
+                            <ul class="product-features">
+                                <li>Heavy-duty polyethylene</li>
+                                <li>Standard pallet sizes</li>
+                                <li>Waterproof and dustproof</li>
+                                <li>Easy to apply and remove</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 16 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="seasonal">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://m.media-amazon.com/images/I/71Y1k9ZqWBL._AC_UF1000,1000_QL80_.jpg"
+                                alt="BBQ Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">BBQ Grill Cover</h3>
+                            <p class="product-description">Weather-resistant cover for outdoor grills.</p>
+                            <ul class="product-features">
+                                <li>Heat-resistant material</li>
+                                <li>Elastic hem for secure fit</li>
+                                <li>Vents to prevent moisture</li>
+                                <li>Fits most standard grills</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 17 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="furniture">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">New</span>
+                            <img src="https://m.media-amazon.com/images/I/71JdZnQKXBL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Desk Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Office Desk Cover</h3>
+                            <p class="product-description">Clear protective cover for office and computer desks.</p>
+                            <ul class="product-features">
+                                <li>Scratch-resistant surface</li>
+                                <li>Non-slip backing</li>
+                                <li>Easy to clean</li>
+                                <li>Custom sizes available</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 18 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="food">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://m.media-amazon.com/images/I/71Y3QYJlRBL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Bread Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Bread Storage Box</h3>
+                            <p class="product-description">Keep bread fresh longer with this airtight container.</p>
+                            <ul class="product-features">
+                                <li>BPA-free plastic</li>
+                                <li>Ventilated lid</li>
+                                <li>Compact design</li>
+                                <li>Fits standard loaf sizes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 19 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="vehicle">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">Best Value</span>
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2021/12/UP/YC/JA/3033603/plastic-sheet-500x500.jpg"
+                                alt="Bike Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Bicycle Rain Cover</h3>
+                            <p class="product-description">Lightweight protection for bicycles when parked outdoors.</p>
+                            <ul class="product-features">
+                                <li>Waterproof polyester</li>
+                                <li>Reflective strips</li>
+                                <li>Includes lock hole</li>
+                                <li>Fits most bike sizes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 20 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="industrial">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://m.media-amazon.com/images/I/71yJYH4ZkVL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Machine Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Industrial Machine Covers</h3>
+                            <p class="product-description">Custom-fit covers for industrial equipment.</p>
+                            <ul class="product-features">
+                                <li>Flame-retardant material</li>
+                                <li>Anti-static properties</li>
+                                <li>Reinforced stitching</li>
+                                <li>Made to order</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 21 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="seasonal">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://m.media-amazon.com/images/I/71xX+n+JwVL._AC_UF1000,1000_QL80_.jpg"
+                                alt="AC Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Air Conditioner Cover</h3>
+                            <p class="product-description">Protect your outdoor AC unit during winter months.</p>
+                            <ul class="product-features">
+                                <li>Weather-resistant vinyl</li>
+                                <li>Elastic bottom cord</li>
+                                <li>Vented to prevent moisture</li>
+                                <li>Fits most standard units</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 22 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="furniture">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">Bestseller</span>
+                            <img src="https://m.media-amazon.com/images/I/81V5J+1VJQL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Couch Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Stretchable Couch Cover</h3>
+                            <p class="product-description">Form-fitting cover that stays in place and looks great.</p>
+                            <ul class="product-features">
+                                <li>4-way stretch material</li>
+                                <li>Non-slip backing</li>
+                                <li>Machine washable</li>
+                                <li>20+ color options</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 23 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="food">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2021/12/QO/KK/JA/3033603/plastic-chair-cover-500x500.jpg"
+                                alt="Food Wrap" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Plastic Food Wrap</h3>
+                            <p class="product-description">Commercial-grade cling film for food service.</p>
+                            <ul class="product-features">
+                                <li>1000ft per roll</li>
+                                <li>Extra cling formula</li>
+                                <li>Microwave safe</li>
+                                <li>Case of 12 rolls</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 24 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="vehicle">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://m.media-amazon.com/images/I/71x5x+2rWVL._AC_UF1000,1000_QL80_.jpg"
+                                alt="RV Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">RV Storage Cover</h3>
+                            <p class="product-description">Heavy-duty protection for recreational vehicles.</p>
+                            <ul class="product-features">
+                                <li>Triple-layer fabric</li>
+                                <li>Zippered access panels</li>
+                                <li>Ventilated to prevent mold</li>
+                                <li>Fits RVs up to 35'</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 25 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="industrial">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">Heavy-duty</span>
+                            <img src="https://m.media-amazon.com/images/I/71Y1k9ZqWBL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Construction Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Construction Debris Covers</h3>
+                            <p class="product-description">Protect floors and furniture during renovations.</p>
+                            <ul class="product-features">
+                                <li>6 mil thickness</li>
+                                <li>Reinforced edges</li>
+                                <li>Non-slip surface</li>
+                                <li>Various sizes available</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 26 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="seasonal">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://m.media-amazon.com/images/I/71JdZnQKXBL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Snow Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Snow Thrower Cover</h3>
+                            <p class="product-description">Keep your snow blower protected year-round.</p>
+                            <ul class="product-features">
+                                <li>Weather-resistant polyester</li>
+                                <li>Elastic bottom hem</li>
+                                <li>Vented to prevent condensation</li>
+                                <li>Fits most models</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 27 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="furniture">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://m.media-amazon.com/images/I/71Y3QYJlRBL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Ottoman Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Ottoman Slipcover</h3>
+                            <p class="product-description">Easy-fit cover to refresh your ottoman.</p>
+                            <ul class="product-features">
+                                <li>Stretchable fabric</li>
+                                <li>Machine washable</li>
+                                <li>Available in 5 colors</li>
+                                <li>Fits cubes up to 24"</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 28 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="food">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">Eco-friendly</span>
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2021/12/UP/YC/JA/3033603/plastic-sheet-500x500.jpg"
+                                alt="Salad Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Salad Container Set</h3>
+                            <p class="product-description">Keep salads fresh with these compartmentalized containers.
+                            </p>
+                            <ul class="product-features">
+                                <li>BPA-free plastic</li>
+                                <li>Leak-proof lids</li>
+                                <li>Stackable design</li>
+                                <li>Set of 5 containers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 29 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="vehicle">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://m.media-amazon.com/images/I/71yJYH4ZkVL._AC_UF1000,1000_QL80_.jpg"
+                                alt="ATV Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">ATV Protective Cover</h3>
+                            <p class="product-description">Durable cover for all-terrain vehicles.</p>
+                            <ul class="product-features">
+                                <li>Waterproof polyester</li>
+                                <li>UV protection</li>
+                                <li>Elastic hem with buckle straps</li>
+                                <li>Fits most ATV models</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 30 -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="industrial">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">Industrial</span>
+                            <img src="https://m.media-amazon.com/images/I/71xX+n+JwVL._AC_UF1000,1000_QL80_.jpg"
+                                alt="Equipment Cover" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="product-title">Heavy Equipment Covers</h3>
+                            <p class="product-description">Custom covers for construction equipment.</p>
+                            <ul class="product-features">
+                                <li>Industrial-grade vinyl</li>
+                                <li>Flame retardant</li>
+                                <li>Reinforced stress points</li>
+                                <li>Made to order</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn btn-primary back-to-top" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+    </button>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="images/Abhiverdhya Logo Audit.jpg" alt="Prime Polymers" height="40" class="mb-3">
+                    <p>Leading plastic manufacturer with 25+ years of experience delivering high-quality, sustainable plastic solutions.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3 hover-rotate"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3 hover-rotate"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3 hover-rotate"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white hover-rotate"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white">About</a></li>
+                        <li class="mb-2"><a href="#products" class="text-white">Products</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white">Services</a></li>
+                        <li><a href="#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Products</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white">Plastic Containers</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Packaging Solutions</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Industrial Components</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Custom Molding</a></li>
+                        <li><a href="#products" class="text-white">View All</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe for updates and industry insights.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                    <p class="small text-muted">We respect your privacy. Unsubscribe anytime.</p>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-secondary">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0">&copy; 2023 Prime Polymers. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">Designed by <a href="https://arka.org.in/index.php" class="text-primary">Arka Technologies</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

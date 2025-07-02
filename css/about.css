@@ -1,0 +1,246 @@
+:root {
+  --primary: #0d6efd;
+  --secondary: #6c757d;
+  --accent: #e74c3c;
+  --light: #f8f9fa;
+  --dark: #212529;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* About Section */
+.about-section {
+  padding: 100px 0;
+  background-color: white;
+  position: relative;
+}
+.about-section {
+    background-image: url('../images/slide2.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.about-section .container {
+    background: rgba(255,255,255,0.5); /* semi-transparent white */
+    border-radius: 16px;
+    padding: 40px;
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--white), var(--green));
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-header p {
+  color: var(--dark);
+  max-width: 700px;
+  font-weight: 600;
+  margin: 25px auto 0;
+}
+
+/* Company Journey */
+.journey-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  height: 350px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  border-left: 4px solid var(--secondary);
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.journey-card.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.journey-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.journey-card h3 {
+  color: var(--primary);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.journey-card .year {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* Mission & Vision */
+.mission-vision {
+  background: var(--light);
+  padding: 80px 0;
+  position: relative;
+}
+
+.mv-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+.mv-card.animated {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.mv-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mv-card i {
+  font-size: 2.5rem;
+  color: var(--secondary);
+  margin-bottom: 20px;
+}
+
+.mv-card h3 {
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+/* Owner Message */
+.owner-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.owner-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.owner-card.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.owner-img {
+  height: 100%;
+  min-height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.owner-info {
+  padding: 40px;
+}
+
+.owner-info h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.owner-info .position {
+  color: var(--secondary);
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.owner-info p {
+  color: #7f8c8d;
+  margin-bottom: 25px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.signature {
+  font-family: "Brush Script MT", cursive;
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .owner-card {
+    flex-direction: column;
+  }
+
+  .owner-img {
+    min-height: 400px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section,
+  .mission-vision,
+  .owner-section {
+    padding: 60px 0;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+}
