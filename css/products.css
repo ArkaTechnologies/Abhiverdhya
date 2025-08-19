@@ -246,7 +246,7 @@ body {
 
 @media (max-width: 768px) {
   .hero-section {
-    height: 25vh;
+    height: 50vh;
     padding: 3rem 0;
   }
 
@@ -263,6 +263,7 @@ body {
 @media (max-width: 576px) {
   .hero-section{
     padding: 1rem 0;
+    height: 35vh;
   }
 
   .hero-section h1{
@@ -284,6 +285,13 @@ body {
   .flip-card-front .flip-hint,
   .flip-card-back .flip-hint{
     visibility: visible;
+  }
+}
+
+@media (max-width: 430) {
+  .hero-section {
+    height: 35vh;
+    padding: 10px 0;
   }
 }
 
