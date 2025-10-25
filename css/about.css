@@ -122,8 +122,18 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+/* Hover effect only for desktop/laptop */
+@media (min-width: 993px) {
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Click effect for mobile and flipped state */
+@media (max-width: 992px) {
+  .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
 }
 
 .flip-card-front,
@@ -212,6 +222,10 @@ body {
 
   .flip-hint {
     visibility: visible;
+  }
+
+  .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
   }
 }
 
