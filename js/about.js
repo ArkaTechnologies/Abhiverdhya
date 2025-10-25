@@ -38,50 +38,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Handle card flipping
-    const isMobile = () => window.innerWidth <= 992;
-    let activeCard = null;
-
-    // Handle clicks outside cards
-    document.addEventListener('click', (e) => {
-        if (isMobile() && activeCard && !e.target.closest('.flip-card')) {
-            activeCard.classList.remove('flipped');
-            activeCard = null;
-        }
-    });
-
-    // Handle window resize
-    window.addEventListener('resize', () => {
-        if (!isMobile() && activeCard) {
-            activeCard.classList.remove('flipped');
-            activeCard = null;
-        }
-    });
-
-    // Add flip card interaction
+    // Add touch support for mobile devices
     document.querySelectorAll('.flip-card').forEach(card => {
-        const cardInner = card.querySelector('.flip-card-inner');
-        
-        const handleInteraction = (e) => {
-            if (!isMobile()) return; // Let CSS handle desktop hover
-            e.preventDefault();
-            e.stopPropagation();
-            
-            if (activeCard && activeCard !== cardInner) {
-                activeCard.classList.remove('flipped');
-            }
+        card.addEventListener('touchstart', function () {
+            this.querySelector('.flip-card-inner').classList.toggle('flipped');
+        });
+    });
 
-            if (activeCard === cardInner) {
-                cardInner.classList.remove('flipped');
-                activeCard = null;
-            } else {
-                cardInner.classList.add('flipped');
-                activeCard = cardInner;
-            }
-        };
-
-        // Add both touch and click handlers
-        card.addEventListener('touchstart', handleInteraction, { passive: false });
-        card.addEventListener('click', handleInteraction);
+    // Optional: Add click support for desktop if hover isn't enough
+    document.querySelectorAll('.flip-card').forEach(card => {
+        card.addEventListener('click', function () {
+            this.querySelector('.flip-card-inner').classList.toggle('flipped');
+        });
     });
 });
