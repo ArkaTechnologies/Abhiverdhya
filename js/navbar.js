@@ -144,7 +144,61 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+// Close navbar when clicking outside or on a nav link (mobile)
+document.addEventListener('click', function (e) {
+    const collapseEl = document.querySelector('.navbar .navbar-collapse');
+    const toggler = document.querySelector('.navbar .navbar-toggler');
+    const offcanvas = document.getElementById('navbarLinks'); // custom side menu
 
+    const clickedInsideNavbar = e.target.closest('.navbar');
+    const clickedInsideOffcanvas = e.target.closest('#navbarLinks');
+
+    // If Bootstrap collapse is open and click happened outside navbar and offcanvas, close it
+    if (collapseEl && collapseEl.classList.contains('show') && !clickedInsideNavbar && !clickedInsideOffcanvas) {
+        try {
+            const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false });
+            bsCollapse.hide();
+        } catch (_) {
+            collapseEl.classList.remove('show');
+        }
+    }
+
+    // If custom offcanvas is open and click outside both the toggler and the offcanvas, close it
+    if (offcanvas && offcanvas.classList.contains('show') && !clickedInsideOffcanvas && (!toggler || !toggler.contains(e.target)) && !clickedInsideNavbar) {
+        offcanvas.classList.remove('show');
+    }
+});
+
+// Close collapse after clicking any nav link (useful on mobile)
+document.addEventListener('click', function (e) {
+    const link = e.target.closest('.navbar .nav-link');
+    if (!link) return;
+    const collapseEl = document.querySelector('.navbar .navbar-collapse');
+    if (collapseEl && collapseEl.classList.contains('show')) {
+        try {
+            bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false }).hide();
+        } catch (_) {
+            collapseEl.classList.remove('show');
+        }
+    }
+});
+
+// Also close on Escape key
+window.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    const collapseEl = document.querySelector('.navbar .navbar-collapse');
+    const offcanvas = document.getElementById('navbarLinks');
+    if (collapseEl && collapseEl.classList.contains('show')) {
+        try {
+            bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false }).hide();
+        } catch (_) {
+            collapseEl.classList.remove('show');
+        }
+    }
+    if (offcanvas && offcanvas.classList.contains('show')) {
+        offcanvas.classList.remove('show');
+    }
+});
 
 /* Back to top */
 document.addEventListener('DOMContentLoaded', function () {
