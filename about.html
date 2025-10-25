@@ -541,47 +541,19 @@
     <script src="js/about.js"></script>
     <script src="js/navbar.js"></script>
     <script>
-        // Mobile: click to flip (one at a time) and click outside to unflip
-        // Desktop: hover-only flip; clicks do not lock state
-        (function () {
-            const isTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+        // Add touch support for mobile devices
+        document.querySelectorAll('.flip-card').forEach(card => {
+            card.addEventListener('touchstart', function () {
+                this.querySelector('.flip-card-inner').classList.toggle('flipped');
+            });
+        });
 
-            if (isTouch) {
-                const cards = Array.from(document.querySelectorAll('.flip-card'));
-                cards.forEach(card => {
-                    card.addEventListener('click', function () {
-                        const inner = this.querySelector('.flip-card-inner');
-                        const wasFlipped = inner.classList.contains('flipped');
-                        // Unflip all first
-                        cards.forEach(c => c.querySelector('.flip-card-inner').classList.remove('flipped'));
-                        // Flip clicked if it wasn't already flipped
-                        if (!wasFlipped) inner.classList.add('flipped');
-                    }, { passive: true });
-                });
-
-                // Click outside any card closes any flipped card
-                document.addEventListener('click', function (e) {
-                    if (e.target.closest('.flip-card')) return;
-                    document.querySelectorAll('.flip-card .flip-card-inner.flipped')
-                        .forEach(el => el.classList.remove('flipped'));
-                }, { passive: true });
-            } else {
-                // Desktop: ensure no flipped state persists; clicks should not lock
-                const cards = document.querySelectorAll('.flip-card');
-                cards.forEach(card => {
-                    const inner = card.querySelector('.flip-card-inner');
-                    // Remove any flipped class on load and on mouseleave
-                    inner.classList.remove('flipped');
-                    card.addEventListener('mouseleave', function(){
-                        inner.classList.remove('flipped');
-                    });
-                    // Prevent click from locking state (safety)
-                    card.addEventListener('click', function(){
-                        inner.classList.remove('flipped');
-                    }, { passive: true });
-                });
-            }
-        })();
+        // Optional: Add click support for desktop if hover isn't enough
+        document.querySelectorAll('.flip-card').forEach(card => {
+            card.addEventListener('click', function () {
+                this.querySelector('.flip-card-inner').classList.toggle('flipped');
+            });
+        });
     </script>
 </body>
 
