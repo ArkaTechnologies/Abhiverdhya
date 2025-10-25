@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -29,8 +29,8 @@ body {
   overflow: hidden;
 }
 
-.container h2{
-  color: rgb(99, 98, 98)
+.container h2 {
+  color: rgb(99, 98, 98);
 }
 
 .hero-section::before {
@@ -55,7 +55,7 @@ body {
   left: -50px;
 }
 
-.product-title{
+.product-title {
   font-weight: 800;
   font-size: 3.5rem;
   margin-bottom: 1rem;
@@ -76,6 +76,14 @@ body {
 
 .hero-section a {
   text-decoration: none;
+  color: var(--dark-color);
+}
+
+.hero-section .btn-outline-light a {
+  color: var(--light-color);
+}
+
+.hero-section .btn-outline-light a:hover {
   color: var(--dark-color);
 }
 
@@ -200,8 +208,18 @@ body {
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+/* Hover effect only for desktop/laptop */
+@media (min-width: 993px) {
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Click effect for mobile and flipped state */
+@media (max-width: 992px) {
+  .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
 }
 
 .flip-card-front,
@@ -238,13 +256,13 @@ body {
     height: 350px;
     padding: 5rem 0;
   }
-  
+
   .flip-hint {
     visibility: visible;
   }
 }
 
-@media (max-width: 768px ) {
+@media (max-width: 768px) {
   .hero-section {
     height: 50vh;
     padding: 3rem 0;
@@ -255,26 +273,26 @@ body {
   }
 
   .flip-card-front .flip-hint,
-  .flip-card-back .flip-hint{
+  .flip-card-back .flip-hint {
     visibility: visible;
   }
 }
 
 @media (max-width: 576px) {
-  .hero-section{
+  .hero-section {
     padding: 1rem 0;
     height: 35vh;
   }
 
-  .hero-section h1{
+  .hero-section h1 {
     font-size: 2.5rem;
   }
 
-  .hero-section p{
+  .hero-section p {
     font-size: 1rem;
   }
 
-  .hero-section .btn{
+  .hero-section .btn {
     padding: 5px;
   }
 
@@ -282,9 +300,17 @@ body {
     height: 120px;
   }
 
+  .card-img-container {
+    height: 250px;
+  }
+
   .flip-card-front .flip-hint,
-  .flip-card-back .flip-hint{
+  .flip-card-back .flip-hint {
     visibility: visible;
+  }
+
+  .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
   }
 }
 
